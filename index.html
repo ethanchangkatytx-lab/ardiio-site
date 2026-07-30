@@ -14,22 +14,13 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Ardiio: Never walk in alone again" />
     <meta name="twitter:description" content="Get paired with an experienced gym regular already at your gym. Sessions from $5." />
-    <meta name="theme-color" content="#FFFFFF" />
-    <script>
-      // Resolve the theme before first paint: ?theme= override wins (handy for
-      // sharing/testing), then a stored choice, then the system preference.
-      try {
-        var t = new URLSearchParams(window.location.search).get('theme');
-        if (t !== 'light' && t !== 'dark') t = localStorage.getItem('ardiio-theme');
-        if (t !== 'light' && t !== 'dark') {
-          t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-        }
-        document.documentElement.dataset.theme = t;
-      } catch (e) { document.documentElement.dataset.theme = 'light'; }
-    </script>
+    <meta name="theme-color" content="#0F1420" />
     <style>
-      :root { --boot-bg: #FFFFFF; --boot-ink: #363B4E; --boot-a: #A8CFEE; --boot-b: #5CA3DC; --boot-bar: #BACBDD; --boot-shadow: #1F5E92; }
-      :root[data-theme="dark"] { --boot-bg: #0F1420; --boot-ink: #E7EDF7; --boot-a: #A8CFEE; --boot-b: #5CA3DC; --boot-bar: #384866; --boot-shadow: #000000; }
+      /* The marketing site is dark only — it is built to sit behind photography,
+         which a light theme washes out. No theme-resolution script is needed
+         because there is nothing to resolve. The Ardiio app itself still ships
+         both themes; this is the landing page only. */
+      :root { --boot-bg: #0F1420; --boot-ink: #E7EDF7; --boot-a: #4E93EE; --boot-b: #3B82E8; --boot-bar: #384866; --boot-shadow: #000000; }
       #boot {
         position: fixed; inset: 0; background: var(--boot-bg);
         display: flex; flex-direction: column; align-items: center; justify-content: center;
@@ -57,8 +48,8 @@
         .boot-db, .boot-shadow, .boot-word { animation: none; }
       }
     </style>
-    <script type="module" crossorigin src="/assets/index-YPCXSAIM.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-Br3aHUpv.css">
+    <script type="module" crossorigin src="/assets/index-DLjpEv32.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BGpW1YFt.css">
   </head>
   <body>
     <div id="root"><div id="boot">
