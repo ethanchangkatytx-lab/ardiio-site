@@ -26,7 +26,7 @@
   <li>We do not sell your data. Not to anyone, ever.</li>
   <li>We do not show ads and we do not run analytics or tracking SDKs.</li>
   <li>We never see your card number. Stripe handles payments end to end.</li>
-  <li>Location is used only while the app is open, and you can skip it.</li>
+  <li>Location is used only while the app is open, or while you are searching for your gym on this site, and you can skip it either way.</li>
   <li>You can delete your account and everything in it from inside the app.</li>
 </ul>
 
@@ -74,6 +74,8 @@
 
 <p>That is the whole list. We do not collect your contacts, your photos, your health data, your browsing history, or anything from other apps.</p>
 
+<p><strong>On this website</strong>, before the app has launched, the forms ask for less: your email address for the waitlist; your name, email, gym and whether you are joining as a trainee or a coach for early access; and your name, email and message if you use the contact form. We also record that you ticked the box accepting these policies, and which dated version you accepted.</p>
+
 <h2>What other people can see</h2>
 
 <p>Members at the same gym as you can see your <strong>first name, your initials, your gym, and your rating</strong>. If you are a coach they can also see your bio, your specialties and the hours you usually train.</p>
@@ -88,6 +90,8 @@
   <li>Showing a "you are at the gym" indicator so you know the coaches listed are actually there now.</li>
 </ul>
 <p>If you say no, the app still works. You pick your gym from a list instead. You can change the permission at any time in your device settings.</p>
+
+<p><strong>On this website</strong>, the early access form can list gyms near you as well. If you allow it, your browser gives the page your approximate coordinates, and the page sends those coordinates to the Overpass API — a public service run by the OpenStreetMap community — to ask which gyms are within a few miles. Your coordinates are used for that lookup only. They are not stored by us and are not sent anywhere else, and only the gym you pick is submitted with the form. Decline the prompt and you type your gym in by hand instead; the form works either way.</p>
 
 <h2>Payments</h2>
 
@@ -106,11 +110,17 @@
 
 <h2>Who we share it with</h2>
 
-<p>Only the companies that make the app run:</p>
+<p>Only the companies that make Ardiio run. In the app:</p>
 <ul>
   <li><strong>Stripe</strong> for payments and coach payouts.</li>
   <li><strong>Resend</strong> to send your sign in codes by email.</li>
   <li><strong>Railway</strong> where the Ardiio server and database are hosted.</li>
+</ul>
+<p>This website is a separate, static site and uses a different set:</p>
+<ul>
+  <li><strong>FormSubmit</strong> receives everything you type into a form here — the waitlist, the early access sign up, and the contact form — and forwards it to us by email. That includes your name, email address, gym, and message.</li>
+  <li><strong>The Overpass API</strong>, a public service run by the OpenStreetMap community, receives your approximate coordinates when you use the nearby gym search on the sign up form. It returns a list of gyms and is subject to OpenStreetMap's own privacy practices.</li>
+  <li><strong>GitHub Pages</strong> hosts this website and keeps standard server logs, which include your IP address and browser.</li>
 </ul>
 <p>Each of these only receives what it needs to do its job. We may also disclose information if the law requires it, for example a valid subpoena.</p>
 
